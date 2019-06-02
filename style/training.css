@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.box-detail-left{
+	width: 48%;
+	height: 250px; 
+	border: 1px solid black; 
+	float: left;
+	padding: 10px;
+	font-family: khmer;
+	margin-bottom: 10px;
+}
+.box-detail-right{
+	width: 48%;
+	height: 250px; 
+	border: 1px solid black; 
+	float: right; 
+	padding: 10px;
+	font-family: khmer;
+	margin-bottom: 10px;
+}
+
+.table-bordered{
+	font-family: khmer;
+	background-color: white;
+}

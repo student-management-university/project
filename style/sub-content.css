@@ -1,0 +1,350 @@
+@charset "utf-8";
+/* CSS Document */
+
+.sub-slides{
+	width:100%;
+	background: #F6F6F6;
+	margin: auto;
+	position: relative;
+  	height: 100%;
+}
+
+.sub-slides .swiper-container {
+	display: flex;
+   	width: 100%;
+  	height: 180px;
+  	margin-left: auto;
+    margin-right: auto;
+}
+.sub-slides .swiper-slide {
+  font-size: 18px;
+  background: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+	max-width: 150px;
+	min-width: 130px;
+}
+	.slide-box{
+		width: 100%;
+		height: 100%;
+		float: left;
+	}
+	 .slide-box .slide{
+		width: 100%;
+		height: 85px;
+		font-size: 14px;
+		padding-bottom: 5px;
+		float: left;
+		word-wrap: break-word;
+		font-family: 'Battambang';
+		color: #585858;
+		text-align: left;
+	}
+	 .slide-box .slide img{
+		width: 100%;
+		height: 100%;
+	}
+
+/*for slide*/
+
+.box_slide {
+	  display: none;
+      position: relative;
+	  width: 100%;
+      height: 250px;
+	  margin: auto;
+	  margin-bottom: 20px;
+    }
+
+.box_slide .swiper-container {
+      width: 100%;
+      height: 100%;
+	
+    }
+.box_slide .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background:rgba(0,0,0,1.00);
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+.box_slide  .swiper-slide a img{
+		  width: 100%;
+		  height: 100%;
+	  }
+.box_slide .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color:#000;
+      opacity: 1;
+      background: rgba(0,0,0,0.2);
+    }
+.box_slide .swiper-pagination-bullet-active {
+      color:#fff;
+      background: #007aff;
+    }
+.box_slide  a .title{
+		  position: absolute;
+		  left: 0;
+		  bottom: 0;
+		  width: 100%;
+		  background-color:rgba(0,0,0,0.5);
+		  text-align: left;
+	      font-family: 'Battambang';
+		  padding: 10px;
+		  color: white;
+		  line-height: 30px;
+		  font-size: 18px;
+	  }
+
+/*iphone 6,7,8*/
+@media only screen 
+  and (min-width: 375px) 
+  and (max-width: 667px) 
+  and (orientation: portrait) 
+  { 
+
+	  .box_slide{
+		  display: flex;
+	  }
+}
+
+@media only screen 
+  and (min-width: 375px) 
+  and (max-width: 667px) 
+  and (orientation: landscape){
+	.box_slide{
+		  display: flex;
+	  }
+	  
+	 .box_slide  .swiper-slide img{
+		  width: 450px;
+		  height: 100%;
+	  }
+}
+
+/*iphone 6,7,8*/
+
+/*iphone 5,5SE*/
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 568px)
+  and (orientation: portrait)
+   {
+
+	  .box_slide{
+		  display: flex;
+	  }
+}
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 568px)
+  and (orientation: landscape) {
+
+	  .box_slide{
+		  display: flex;
+	  }
+	  
+	   .box_slide  .swiper-slide img{
+		  width: 450px;
+		  height: 100%;
+	  }
+}
+
+
+/*iphone 5,5SE*/
+
+/*iphone 4,4s*/
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 480px)
+  and (orientation: portrait) {
+
+	   .box_slide{
+		  display: flex;
+	  }
+}
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 480px)
+  and (orientation: landscape) {
+
+	   .box_slide{
+		  display: flex;
+	  }
+	  
+	   .box_slide  .swiper-slide a img{
+		  width: 450px;
+		  height: 100%;
+	  }
+}
+
+/*iphone 4,4s*/
+
+/*iphone 6 plus,7 plus,8plus*/
+@media only screen 
+  and (min-width: 414px) 
+  and (max-width: 736px) 
+  and (orientation: portrait)
+	{
+		.box_slide{
+		  display: flex;
+	  }
+}
+
+@media only screen 
+  and (min-width: 414px) 
+  and (max-width: 736px) 
+  and (orientation: landscape) { 
+
+	   .box_slide{
+		  display: flex;
+	  }
+	  
+	   .box_slide  .swiper-slide a img{
+		  width: 450px;
+		  height: 100%;
+	  }
+}
+
+/*iphone 6 plus,7 plus,8plus*/
+
+/*pixel 2*/
+@media only screen 
+  and (min-width: 411px) 
+  and (max-width: 731px) 
+  and (orientation: landscape) {
+
+	   .box_slide{
+		  display: flex;
+	  }
+	  
+	   .box_slide  .swiper-slide img{
+		  width: 450px;
+		  height: 100%;
+	  }
+}
+
+/*Nokia Lumie*/
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 533px) 
+  and (orientation: landscape) {
+
+	   .box_slide{
+		  display: flex;
+	  }
+	  
+	   .box_slide  .swiper-slide a img{
+		  width: 450px;
+		  height: 100%;
+	  }
+}
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 533px) 
+  and (orientation: portrait) {
+
+	   .box_slide{
+		  display: flex;
+	  }
+}
+
+
+@media only screen 
+  and (min-width:480px) 
+  and (max-width: 854px) 
+  and (orientation: portrait) {
+
+	   .box_slide{
+		  display: flex;
+	  }
+}
+
+@media only screen 
+  and (min-width: 360px) 
+  and (max-width: 740px) 
+  and (orientation: landscape) {
+	   .box_slide{
+		  display: flex;
+	  }
+	  
+	   .box_slide  .swiper-slide a img{
+		  width: 450px;
+		  height: 100%;
+	  }
+}
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: portrait)  {
+	  
+	   .box_slide{
+		  display: flex;
+	  }
+}
+
+@media only screen 
+  and (min-width: 600px) 
+  and (max-width: 960px) 
+  and (orientation: portrait)  {
+	  
+	   .box_slide{
+		  display: flex;
+	  }
+}
+
+/*for ipad-pro(12.9inch)*/
+@media only screen 
+	and (min-width : 1024px) 
+	and (max-width : 1336px){
+		
+		 .box_slide{
+		  display: none;
+	  }   
+		  
+}
+
+@media only screen 
+	and (min-width : 834px) 
+	and (max-width : 1112px){
+		
+		 .box_slide{
+		  display: none;
+	  }   
+		  
+}
+
+
+
+
+
+
+

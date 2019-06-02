@@ -1,0 +1,390 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#menu a {
+  text-decoration: none;
+  color: #1E1E23;
+  opacity:1;
+  font-family: 'Koulen';
+  font-size: 1.5em;
+  font-weight: 400;
+  transition: 200ms;
+}
+#menu a:hover {
+  opacity:0.5;
+}
+ ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+.phone_menu {
+  Display: none;
+  width: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+  justify-content: center;
+  align-items: center;
+	z-index: 10;
+}
+.test{
+	width: 100%;
+	height: 65px;
+	display: none;
+	z-index: 0;
+}
+nav {
+  background-color: #1E1E23;
+  width: 100%;
+  height: 65px;
+  padding: 25px;
+}
+
+
+#menuToggle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: flex;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#menuToggle span
+{
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: #36383F;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  overflow-y: scroll;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 250px;
+  height: 400px;
+  box-shadow: 0 0 10px #85888C;
+  margin: -50px 0 0 -50px;
+  padding: 10px 0px 10px 50px;
+  padding-top: 80px;
+  background-color: #F5F6FA;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 7px 0;
+  transition-delay: 2s;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+	
+
+
+/*iphone 6,7,8*/
+@media only screen 
+  and (min-width: 375px) 
+  and (max-width: 667px) 
+  and (orientation: portrait) 
+  { 
+	 .phone_menu{
+		   display: flex;
+	   }
+	   .test{
+		   display: block;
+	   }
+}
+
+@media only screen 
+  and (min-width: 375px) 
+  and (max-width: 667px) 
+  and (orientation: landscape){
+	.phone_menu{
+		   display: flex;
+	   }
+	 .test{
+		   display: block;
+	   }
+}
+
+/*iphone 6,7,8*/
+
+/*iphone 5,5SE*/
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 568px)
+  and (orientation: portrait)
+   {
+	
+	    .phone_menu{
+		   display: flex;
+	   }
+	   .test{
+		   display: block;
+	   }
+}
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 568px)
+  and (orientation: landscape) {
+	  
+	     .phone_menu{
+		   display: flex;
+	   }
+	   .test{
+		   display: block;
+	   }
+}
+
+
+/*iphone 5,5SE*/
+
+/*iphone 4,4s*/
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 480px)
+  and (orientation: portrait) {
+	    
+	  .phone_menu{
+		   display: flex;
+	   }
+	   .test{
+		   display: block;
+	   }
+}
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 480px)
+  and (orientation: landscape) {
+	  
+	.phone_menu{
+		   display: flex;
+	   }
+	 .test{
+		   display: block;
+	   }
+}
+
+/*iphone 4,4s*/
+
+/*iphone 6 plus,7 plus,8plus*/
+@media only screen 
+  and (min-width: 414px) 
+  and (max-width: 736px) 
+  and (orientation: portrait)
+	{
+		
+	 .phone_menu{
+		   display: flex;
+	   }
+	   .test{
+		   display: block;
+	   }
+}
+
+@media only screen 
+  and (min-width: 414px) 
+  and (max-width: 736px) 
+  and (orientation: landscape) { 
+	
+	  .phone_menu{
+		   display: flex;
+	   }
+	   .test{
+		   display: block;
+	   }
+}
+
+/*iphone 6 plus,7 plus,8plus*/
+
+/*pixel 2*/
+@media only screen 
+  and (min-width: 411px) 
+  and (max-width: 731px) 
+  and (orientation: landscape) {
+		
+	.phone_menu{
+		   display: flex;
+	   }
+	 .test{
+		   display: block;
+	   }
+}
+
+/*Nokia Lumie*/
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 533px) 
+  and (orientation: landscape) {
+	  
+	   .phone_menu{
+		   display: flex;
+	   }
+	   .test{
+		   display: block;
+	   }
+	  		
+}
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 533px) 
+  and (orientation: portrait) {
+	  
+	   .phone_menu{
+		   display: flex;
+	   }
+	   .test{
+		   display: block;
+	   }
+	  		
+}
+
+
+@media only screen 
+  and (min-width:480px) 
+  and (max-width: 854px) 
+  and (orientation: portrait) {
+	  
+	   .phone_menu{
+		   display: flex;
+	   }
+	   .test{
+		   display: block;
+	   }
+	  		
+}
+
+@media only screen 
+  and (min-width: 360px) 
+  and (max-width: 740px) 
+  and (orientation: landscape) {
+		
+	   .phone_menu{
+		   display: flex;
+	   }
+	   .test{
+		   display: block;
+	   }
+}
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: portrait)  {
+		
+	 .phone_menu{
+		   display: flex;
+	   }
+	   .test{
+		   display: block;
+	   }
+}
+
+@media only screen 
+  and (min-width: 600px) 
+  and (max-width: 960px) 
+  and (orientation: portrait)  {
+			
+	   .phone_menu{
+		   display: flex;
+	   }
+	   .test{
+		   display: block;
+	   }
+
+}
+
+
+@media only screen 
+	and (min-width : 1024px) 
+	and (max-width : 1336px){
+		
+		   .phone_menu{
+		   display: none;
+	   }	
+		   .test{
+		   display: none;
+	   }
+}
+
+@media only screen 
+	and (min-width : 834px) 
+	and (max-width : 1112px){
+				   
+		.phone_menu{
+		   display: none;
+	   }	
+		   .test{
+		   display: none;
+	   }
+		  
+}
+
+
+
+
+
+
